@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+            background: #f4f6f8;
+            color: black;
+        }
+
+        a {
+            display: flex;
+            background: none;
+            border: none;
+            margin: 15px 0;
+            margin-bottom: 30px;
+            color: #484848;
+            font-size: 24px;
+            cursor: pointer;
+            outline: none;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <nav>
+            <a href="dashboard.html" title="Home"><i class="fas fa-home"></i></a>
+            <button title="Menu"><i class="fas fa-th"></i></button>
+            <button title="Sales"><i class="fas fa-dollar-sign"></i></button>
+            <button title="Statistics"><i class="fas fa-chart-bar"></i></button>
+            <button title="Settings"><i class="fas fa-cog"></i></button>
+        </nav>
+    </aside>
+
+    <main>
+        <header>
+            <h1>List Data Product</h1>
+        </header>
+        <section style="width: 100%; display:flex; align-items: center; ">
+                <table>
+                    <thead>
+                        <th>No</th> 
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody id="listProduct">
+
+                    </tbody>
+                </table>
+            <div class="full-row">
+        </section>
+            <div id="editForm">
+                <h3>Edit Produk</h3>
+                <input type="hidden" id="editProductId" />
+                <label for="editName">Nama Produk:</label>
+                <input type="text" id="editName" required />
+                <label for="editPrice">Harga:</label>
+                <input type="number" id="editPrice" required />
+                <label for="editStock">Stok:</label>
+                <input type="number" id="editStock" required />
+                <button id="saveEdit">Simpan</button>
+                <button id="cancelEdit">Batal</button>
+            </div>
+    </main>
+    <script src="script.js"></script>
+   
+</body>
+</html>

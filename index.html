@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: white;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="illustration">
+    </div>
+    <div class="login-form">
+      <h2>Welcome Back!</h2>
+      <form id="loginForm" onsubmit="return false;">
+        <input type="text" id="email" placeholder="Email Address" />
+        <div id="emailError" class="error-message"></div>
+        <input type="password" id="password" placeholder="Password" />
+        <div id="passwordError" class="error-message"></div>
+        <a href="#" style="font-size:0.9rem; float:right; margin-top: 1px;">Forgot Password?</a>
+        <button id="loginBtn">Login</button>
+      </form>
+      <div style="text-align:center; margin: 10px;">Or</div>
+      <div class="social-buttons">
+        <div class="social-button">Google</div>
+        <div class="social-button">Facebook</div>
+      </div>
+      <p style="margin-top: 20px; margin-left:5px; font-size: 0.9rem; text-align: center;">Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

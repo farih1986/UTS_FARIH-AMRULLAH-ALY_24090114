@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+            background: #f4f6f8;
+            color: black;
+            }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <nav>
+            <button title="Home"><i class="fas fa-home"></i></button>
+            <button title="Menu"><i class="fas fa-th"></i></button>
+            <button title="Sales"><i class="fas fa-dollar-sign"></i></button>
+            <button title="Statistics"><i class="fas fa-chart-bar"></i></button>
+            <button title="Settings"><i class="fas fa-cog"></i></button>
+        </nav>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+        <section class="dashContainer">
+            <div class="cards" id="summary">
+                <div class="card">
+                    <img src="image/shopping-bag.png" width="50px">
+                    <p id="produk">total product</p>
+                </div>
+                <div class="card">
+                    <img src="image/shopping-bag.png" width="50px">
+                    <p id="sales">total sales</p>
+                </div>
+                <div class="card">
+                    <img src="image/revenue.png" width="50px">
+                    <p id="revenue">total revenue</p>
+                </div>
+            </div>
+            <div class="full-row">
+                <button id="viewPrd">Lihat Produk</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
