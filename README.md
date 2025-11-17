@@ -1,4 +1,8 @@
-Project ini adalah tugas UTS dari mata kuliah Pemrograman Web.
-Login page memiliki bagian untuk input akun dan password,apabila salah satu dari keduannya ada yang kosong maka akan muncul peringatan bahwa tidak boleh kosong.Lalu ketika keduanya sudah terisi dan di klik tombol login,maka akan berpindah ke halaman dashboard.
-untuk halaman dashboard tertera total produk,total penjualan dan total pemasukan yang datanya diambil dari javascript,di bawahnya ada tombol untuk melihat semua produk yang ketika di klik akan berpindah ke halaman produk. 
-Di halaman produk tertera semua produk yang datanya diambil dari javascript.Lalu ada tombol untuk edit yang ketika di klik akan memunculkan form untuk mengubah isi dari produk,Lalu ada tombol juga untuk menyimpan perubahan dan meng cancelnya.Ada juga tombol delete untuk menghapus produk yang ketika di klik akan muncul alert bertuliskan "apakah anda yakin untuk menghapus produk ini?" dan kalo di konfirmasi akan menghapus produk tersebut.
+Nama : Farih Amrullah 'Aly Nim : 24090114
+
+link github repositories : https://github.com/irfannn09/uts-Irfan_Maulana_Saputra-24090107.git link page github : https://irfannn09.github.io/uts-Irfan_Maulana_Saputra-24090107/
+
+1.Halaman Login (index.html)​Halaman ini berfungsi untuk memvalidasi input Email (sebagai username) dan Password. Menggunakan JavaScript event listener, halaman akan memeriksa apakah kolom terisi; jika kosong, tampilkan pesan error. Jika valid, halaman akan diarahkan ke Dashboard.
+​2. Halaman Dashboard (dashboard.html) ​Halaman utama yang menampilkan ringkasan data penting. Halaman ini memiliki Sidebar Menu dan menampilkan tiga Summary Card (Total Produk, Total Penjualan, Total Revenue). Data diambil dari array dummy JavaScript.
+
+​3. Halaman List Data Produk (products.html)​Halaman ini menampilkan data produk dalam format tabel. Data diambil dari array of object JavaScript. Kolom aksi memiliki fitur :​Edit: Menampilkan form untuk edit produk yang bisa mengganti semua isi data,lalu ada tombol lagi untuk save perubahan dan tombol cancel.​Delete: Menghapus baris produk dari tabel.
